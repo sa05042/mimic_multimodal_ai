@@ -1,3 +1,4 @@
+mode: "joint"  # Options: "contrastive", "classification", "joint", "report_generation"
 mimic_cxr_root: "/path/to/mimic-cxr/images"
 preprocessed_csv: "./data/mimic_preprocessed.csv"
 output_dir: "./checkpoints"
