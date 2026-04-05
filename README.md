@@ -74,7 +74,7 @@ Edit config.yaml for dataset paths, hyperparameters, and training mode:
 ## **Preprocessing MIMIC-CXR**
     python preprocessing.py
 
-- This creates a CSV with columns:
+- This creates a CSV file with columns in data folder:
 
   - file_path → path to image
   - report_text → corresponding radiology report
@@ -91,6 +91,11 @@ Edit config.yaml for dataset paths, hyperparameters, and training mode:
   | report_generation | Generate reports using BioViL → MedPaLM-M / local LLM |
 
 ---
+
+## **Checkpoints**
+
+- Saved automatically in checkpoints/.
+- .gitignore excludes them from GitHub.
 
 ## **Report Generation**
 
