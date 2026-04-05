@@ -1,0 +1,15 @@
+mimic_cxr_root: "/path/to/mimic-cxr/images"
+preprocessed_csv: "./data/mimic_preprocessed.csv"
+output_dir: "./checkpoints"
+batch_size: 16
+max_length: 128
+num_classes: 14
+device: "cuda"
+lr: 2e-6
+epochs: 3
+alpha: 0.5          # weight for contrastive loss
+mode: "joint"       # "contrastive", "classification", "joint", "report_generation"
+train_val_split: 0.8
+seed: 42
+report_max_length: 512
+report_model_name: "google/medmimic-t5-base"
